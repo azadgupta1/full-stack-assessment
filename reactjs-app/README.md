@@ -7,7 +7,7 @@ A simple React.js app to manage a to-do list. You can view ,add tasks and remove
 
 1. **Clone the Repo**
    ```bash
-   `git clone <repository-url>`
+   `git clone https://github.com/azadgupta1/full-stack-assessment.git`
 
 2. Navigate to the Folder
     `cd reactjs-app`
