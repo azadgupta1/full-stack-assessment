@@ -1,0 +1,85 @@
+/* Style for the main container */
+.todo-container {
+  width: 400px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  border: 1px solid #bbb; /* Slightly darker gray border */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  background-color: #e0f7fa; /* Light cyan background for the container */
+}
+
+/* Style for the heading */
+.todo-container h1 {
+  margin-top: 0; /* Remove top margin */
+  font-size: 24px; /* Increase font size */
+  text-align: center; /* Center the heading text */
+  color: #004d40; /* Dark cyan text color */
+}
+
+/* Style for the input field and add button container */
+.input-container {
+  display: flex; /* Use flexbox for layout */
+  margin-bottom: 10px; /* Add space below */
+}
+
+/* Style for the input field */
+input {
+  flex-grow: 1; /* Make input field take up remaining space */
+  padding: 8px;
+  margin-right: 8px; /* Add space between input and button */
+  border: 1px solid #aaa; /* Medium gray border */
+  border-radius: 4px; /* Round the corners */
+  font-size: 16px; /* Increase font size */
+}
+
+/* Style for the add button */
+button.add-button {
+  padding: 8px 12px; /* Add padding */
+  background-color: #26c6da; /* Bright cyan background */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 4px; /* Round the corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+}
+
+/* Style for the button on hover */
+button.add-button:hover {
+  background-color: #00acc1; /* Darker cyan on hover */
+}
+
+/* Style for the list */
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each list item */
+li {
+  margin-bottom: 10px; /* Space between items */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Style for the remove button */
+button.remove-button {
+  background-color: #ff6f61; /* Coral red background */
+  color: white; /* White text color */
+  border: none;
+  padding: 4px 8px; /* Add padding */
+  border-radius: 4px; /* Round the corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 10px; /* Space between item text and button */
+  font-size: 14px; /* Smaller font size */
+}
+
+/* Style for the remove button on hover */
+button.remove-button:hover {
+  background-color: #e64a19; /* Darker coral red on hover */
+}
+
+body {
+  background-color: #f1f8e9; /* Light green background */
+}
