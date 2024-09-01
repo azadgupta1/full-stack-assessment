@@ -7,20 +7,20 @@ A simple React.js app to manage a to-do list. You can view ,add tasks and remove
 
 1. **Clone the Repo**
    ```bash
-   git clone <repository-url>
+   `git clone <repository-url>`
 
 2. Navigate to the Folder
-    cd reactjs-app
+    `cd reactjs-app`
 
 3. Install Dependencies
-    npm install
+    `npm install`
 
 4. Run the App
-    npm start
+    `npm start`
 
-Features
+## Features
 Display and add to-do items and remove items.
 
-License
+## License
 MIT License
 
