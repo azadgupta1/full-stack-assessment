@@ -1,7 +1,8 @@
-// app/page.tsx
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from './page.module.css'; // Importing a CSS module for styling
+// this is the home page of basic nextjs page
+
+import Link from 'next/link';     // for navigation 
+import Image from 'next/image'; // importing for optimized image
+import styles from './page.module.css'; // CSS module for styling
 
 export default function HomePage() {
   return (
@@ -24,7 +25,7 @@ export default function HomePage() {
           <h2 className={styles.sectionTitle}>Our Work</h2>
           <div className={styles.imageGrid}>
             <Image
-              src="https://dummyimage.com/300x250/000/fff" // Add an image in the public directory
+              src="/images/AI.png" // Add an image in the public directory
               alt="Project 1"
               width={300}
               height={200}

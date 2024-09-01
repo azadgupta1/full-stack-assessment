@@ -21,6 +21,5 @@ A simple React.js app to manage a to-do list. You can view ,add tasks and remove
 ## Features
 Display and add to-do items and remove items.
 
-## License
-MIT License
+
 
