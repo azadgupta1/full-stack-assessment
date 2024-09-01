@@ -1,20 +1,20 @@
 const express = require('express');
 const session = require('express-session');
-// const passport = require('passport'); // Commenting out Passport for now
+// const passport = require('passport'); // Commented out because its not working 
 const bcrypt = require('bcrypt');
 const db = require('./db');
-// require('../authentication/passport-config'); // Commenting out Passport configuration import
+// require('../authentication/passport-config'); // Commenting out
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware to log requests
+// Middleware for logging requests
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.url}`);
     next();
 });
 
-// Middleware to parse JSON bodies
+// Middleware for parsign JSON bodies
 app.use(express.json());
 
 // Middleware for sessions
@@ -24,11 +24,11 @@ app.use(session({
     saveUninitialized: false,
 }));
 
-// Initialize Passport and restore authentication state from the session
+
 // app.use(passport.initialize()); // Commenting out Passport initialization
 // app.use(passport.session()); // Commenting out Passport session management
 
-// Root endpoint
+// endpoint of root
 app.get('/', (req, res) => {
     res.json({ message: "Welcome to the Node.js Server!" });
 });
@@ -39,6 +39,7 @@ app.get('/', (req, res) => {
 //     failureRedirect: '/login',
 //     failureFlash: true
 // }));
+// commented out because could not resolve the problem
 
 app.post('/register', async (req, res) => {
     const { name, email, password } = req.body;
@@ -73,10 +74,13 @@ app.get('/logout', (req, res) => {
     //         res.redirect('/');
     //     }
     // });
-    res.json({ message: "Logout endpoint is currently disabled" }); // Placeholder response
+    res.json({ message: "Logout endpoint is currently disabled" }); 
 });
 
-// User CRUD routes
+
+
+// User CRUD routes here given
+
 app.post('/users', async (req, res) => {
     const { name, email, password } = req.body;
     try {
